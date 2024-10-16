@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kolase Romantis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&display=swap');
+
+        body {
+            font-family: 'Great Vibes', cursive;
+            background-color: #fff0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #d13a3a;
+            margin-top: 20px;
+            font-size: 3.5em;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Sesuaikan sesuai kebutuhan */
+    max-height: 200px; /* Sesuaikan sesuai kebutuhan */
+    border-radius: 20px;
+    border: 5px solid #ffb6c1; /* Warna pink romantis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+        .gallery img:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 1.8em;
+            color: #a64d4d;
+            margin-top: 20px;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Layout untuk perangkat lebih kecil */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animasi hati yang melayang */
+        .heart {
+            position: absolute;
+            color: #ff6b81;
+            font-size: 2.5em;
+            animation: floatHeart 5s infinite ease-in-out;
+            opacity: 0.8;
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(0, -100px) scale(1.3);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Posisi hati yang melayang */
+        .heart:nth-child(2) {
+            left: 10%;
+            animation-delay: 1s;
+        }
+        .heart:nth-child(3) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+        .heart:nth-child(4) {
+            left: 60%;
+            animation-delay: 3s;
+        }
+        .heart:nth-child(5) {
+            left: 80%;
+            animation-delay: 4s;
+        }
+
+        /* Tambahkan bunga di pojok */
+        .corner-ornament {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background: url('https://www.pngmart.com/files/11/Flower-PNG-HD.png') no-repeat center center/cover;
+            opacity: 0.9;
+        }
+        .corner-ornament.right {
+            left: auto;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>memories with u</h1>
+    <div class="gallery">
+        <img src="media/109.jpg" alt="Romantic Image 1">
+        <img src="media/101.jpg" alt="Romantic Image 2">
+        <img src="media/108.jpg" alt="Romantic Image 3">
+        <img src="media/103.jpg" alt="Romantic Image 4">
+        <img src="media/102.jpg" alt="Romantic Image 5">
+        <img src="media/100.jpg" alt="Romantic Image 6">
+    </div>
+    <div class="caption">Thank u for accepting me 💕</div>
+
+    <!-- Hati yang melayang -->
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💘</div>
+    <div class="heart">💕</div>
+
+    <!-- Ornamen bunga di pojok -->
+    <div class="corner-ornament"></div>
+    <div class="corner-ornament right"></div>
+</body>
+</html>

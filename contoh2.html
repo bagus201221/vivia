@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vivia Eka Rhenata</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fff0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Menghindari scroll karena animasi */
+        }
+        .container {
+            text-align: center;
+            background-color: #ffe6e6;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            max-width: 700px;
+            border: 1px solid #fbb1b1;
+            position: relative; /* Untuk posisi animasi */
+        }
+        h1 {
+            color: #d13a3a;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #a64d4d;
+        }
+        .footer {
+            font-size: 1em;
+            color: #d13a3a;
+            margin-top: 30px;
+        }
+        .footer a {
+            color: #ff5252;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            background-color: #ff5252;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #d13a3a;
+        }
+
+        /* Animasi hati */
+        .heart {
+            position: absolute;
+            color: #ff5252;
+            font-size: 2em;
+            animation: moveHeart 5s infinite ease-in-out;
+            opacity: 0.8;
+        }
+
+        @keyframes moveHeart {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.5;
+            }
+            25% {
+                transform: translate(-100px, -100px) scale(1.2);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(0, -200px) scale(1);
+                opacity: 0.8;
+            }
+            75% {
+                transform: translate(100px, -100px) scale(0.8);
+                opacity: 0.6;
+            }
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.5;
+            }
+        }
+
+        /* Gaya untuk animasi lebih banyak hati */
+        .heart:nth-child(2) {
+            left: 20%;
+            animation-delay: 0.5s;
+        }
+        .heart:nth-child(3) {
+            left: 70%;
+            animation-delay: 1s;
+        }
+        .heart:nth-child(4) {
+            left: 50%;
+            animation-delay: 1.5s;
+        }
+        .heart:nth-child(5) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VIVIA EKA RHENATA</h1>
+        <p>Teruntuk kamu, Perempuanku yang cantik. Terima kasih sudah mau menerimaku dan memilihku jadi satu-satunya di hatimu, meskipun aku sadar bahwa diriku jauh dari kata sempurna. Aku tidak berjanji akan memberikan kehidupan mewah, tetapi aku berjanji akan menjaga dan bertanggung jawab terhadapmu seperti ayahmu. Meski kamu belum pernah merasakan tulusnya kasih sayang ayahmu, aku akan mencobanya 😊. Menjadi pasanganmu adalah sesuatu yang tidak pernah aku sangka. Terima kasih telah memilihku dari sekian banyak orang yang menginginkanmu. Aku ingin menjadikanmu yang terakhir, dan itu janjiku. One day I will marry you, I promise 🥰🥰💞.</p>
+        <a href="contoh3.html" class="button">FOR YOUR MEMORY</a>
+        <div class="footer">
+            <p>Made with love by <a href="#">S U G A B</a></p>
+        </div>
+    </div>
+
+    <!-- Animasi Hati -->
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+    <div class="heart">❤</div>
+</body>
+</html>
